@@ -15,7 +15,7 @@
     outline: none;
     border: none;
     text-transform: capitalize;
-    transition: all .2s linear;
+    /* transition: all .2s linear; */
     /* line-height: 2; */
 }
 
@@ -52,7 +52,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 1rem;
+    padding: 42px;
 }
 
 .btn {
@@ -89,11 +89,11 @@ h4 {
 
 .heading {
     text-align: center;
-    margin: -1px;
-    padding: 1rem;
+    margin: 1px;
+    padding: 17px;
     font-size: 40px;
     letter-spacing: 2px;
-    border-bottom: .1rem solid #fff4;
+    border-bottom: 0.1rem solid #fff4;
     color: #fff;
     font-weight: 500;
 }
@@ -103,7 +103,7 @@ h4 {
 }
 
 .mb2 {
-    margin-bottom: 10px;
+    margin-bottom: 34px;
 }
 
 
@@ -127,12 +127,14 @@ header {
 }
 
 header .user img {
-    height: 11rem;
-    width: 11rem;
+    height: 160px;
+    width: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: .7rem solid var(--yellow);
+    border: 6px solid var(--yellow);
+    padding-top: 4px;
+    background: #eaeaea;
 }
 
 header .user .name {
@@ -149,7 +151,7 @@ header .user .post {
 
 header .navbar {
     width: 100%;
-
+    margin: -25px;
 }
 
 header .navbar ul {
@@ -161,11 +163,11 @@ header .navbar ul {
 header .navbar ul li a {
     display: block;
     padding: 10px;
-    margin: 1.5rem 0;
+    margin: 14px 10px;
     background: #333;
     color: #fff;
     font-size: 16px;
-    border-radius: 5rem;
+    border-radius: 18px;
     /* margin-right: 130px;
     margin-left: 100px; */
 }
@@ -193,20 +195,25 @@ header .navbar ul li a:hover {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    padding: 0 15rem;
-
+    /* padding: 200px 200px; */
 }
 
 .home h3 {
-    font-size: 2.5rem;
+    font-size: 70px;
     color: #fff;
-
+    font-family: fangsong;
+    letter-spacing: 2px;
+    /* word-spacing: 2px; */
+    margin: 0;
+    margin-left: -8px;
 }
 
 .home h1 {
-    font-size: 2rem;
+    font-size: 29px;
     color: #fff;
-
+    font-family: initial;
+    font-weight: 300;
+    margin-bottom: 29px;
 }
 
 .home h1 span {
@@ -217,6 +224,10 @@ header .navbar ul li a:hover {
     font-size: 1srem;
     color: #eee;
     /* padding: 15px; */
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 2;
+    word-spacing: 5px;
 }
 
 .about .row {
@@ -230,8 +241,8 @@ header .navbar ul li a:hover {
 
 .about .row .info {
     flex: 1 1 48rem;
-    padding: 2rem 1rem;
-    padding-left: 6rem;
+    padding: 2rem 2rem;
+    /* padding-left: 5rem; */
 }
 
 .about .row .info h3 {
@@ -282,19 +293,32 @@ header .navbar ul li a:hover {
     line-height: 01;
 }
 
+.about .row .counter .box {
+    transition: 0.3s;
+}
+
+.about .row .counter .box span {
+    color: #eee;
+}
+
+
+.about .row .counter .box:hover {
+    background: var(--yellow);
+}
 
 .education .box-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1rem 0;
-    padding-left: 3rem;
+    padding: 10px;
+    padding-left: 2rem;
+    margin-top: 12px;
 }
 
 .education .box-container .box {
-    width: 27rem;
-    margin: 4rem 1rem;
+    width: 50%;
+    margin: 24px 0;
     padding-left: 4rem;
     border-left: .2rem solid #fff;
     position: relative;
@@ -337,7 +361,7 @@ header .navbar ul li a:hover {
 }
 
 .skill {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .skill-label {
