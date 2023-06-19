@@ -454,6 +454,14 @@ header .navbar ul li a:hover {
     color: var(--yellow);
 }
 
+div#menu {
+    background: white;
+    padding: 20px;
+    width: fit-content;
+    border-bottom-right-radius: 30px;
+    position: fixed;
+}
+
 /* media queries */
 
 @media (max-width:768px) {
@@ -461,12 +469,6 @@ header .navbar ul li a:hover {
         font-size: 55%;
     }
 
-    .home {
-        padding: 1rem 4rem;
-    }
-}
-
-@media (max-width:768px) {
     header {
         left: -120%;
     }
@@ -482,13 +484,31 @@ header .navbar ul li a:hover {
 
     body {
         padding: 0;
+        width: 100%;
     }
-}
 
-
-@media (max-width:768px) {
     html {
         font-size: 18px;
+    }
+
+    .about .row .info{
+        padding: 0;
+    }
+
+    .about .row .counter{
+        padding:2rem 0;
+    }
+
+    .about .row .counter .box{
+        width: 40%;
+    }
+
+    .education .box-container{
+        padding: 0;
+    }
+
+    .education .box-container .box{
+        width: 100%;
     }
 
 }
