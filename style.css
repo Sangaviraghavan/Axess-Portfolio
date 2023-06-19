@@ -93,7 +93,7 @@ h4 {
 .heading {
     text-align: center;
     margin: 1px;
-    padding: 17px;
+    padding: 16px;
     font-size: 40px;
     letter-spacing: 2px;
     border-bottom: 0.1rem solid #fff4;
@@ -623,6 +623,10 @@ div#menu {
     header.toggle {
         width: 60%;
     }
+
+    .projects .box-container {
+        display: block;
+    }
 }
 
 @media (max-width:400px) {
@@ -676,6 +680,7 @@ div#menu {
     position: relative;
     overflow: hidden;
     display: grid;
+    margin: auto;
     place-items: center;
 }
 
