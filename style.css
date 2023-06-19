@@ -14,7 +14,7 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     /* transition: all .2s linear; */
     /* line-height: 2; */
 }
@@ -331,7 +331,7 @@ header .navbar ul li a:hover {
     font-size: 19px;
     background: #222;
     color: #fff;
-    border-radius: 33px;
+    /* border-radius: 33px; */
 }
 
 .education .box-container .box h3 {
@@ -388,6 +388,85 @@ header .navbar ul li a:hover {
     width: 30px;
     display: flex;
     width: 30%;
+}
+
+/* .projects .box span {
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.projects .box h4 {
+    padding: 20px;
+    margin: 10px;
+    border: 10px 2px solid;
+    
+}
+
+.projects .box p {
+    padding: 10px;
+    margin: 20px;
+} */
+
+
+.projects .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-left: 2rem;
+    margin-top: 12px;
+}
+
+.projects .box-container .box {
+    width: 50%;
+    margin: 24px 0;
+    padding-left: 5rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+    padding-top: 15px;
+}
+
+.projects .box-container .box span {
+    font-size: 19px;
+    background: #222;
+    /* padding: 7px; */
+    color: #fff;
+    /* border-radius: 17px; */
+    margin-bottom: 13px;
+    display: inline-block;
+}
+
+.projects .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+
+.projects .box-container .box p {
+    font-size: 16px;
+    color: #fff;
+    /* padding: 10px 11px; */
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.projects .box-container .box i {
+    position: absolute;
+    top: 1.5rem;
+    left: -32px;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--yellow);
+
 }
 
 .contact .row {
@@ -494,7 +573,7 @@ div#menu {
         width: 100%;
     }
 
-    
+
     html {
         font-size: 18px;
     }
@@ -533,15 +612,15 @@ div#menu {
         margin: 0;
     }
 
-    .contact .row .content{
+    .contact .row .content {
         padding: 30px 0;
     }
 
 }
 
 
-@media(max-width:767px){
-    header.toggle{
+@media(max-width:767px) {
+    header.toggle {
         width: 60%;
     }
 }
@@ -628,7 +707,7 @@ div#menu {
     justify-content: space-evenly;
 }
 
-.progressbar-1 > div {
+.progressbar-1>div {
     margin: 10px;
 }
 
