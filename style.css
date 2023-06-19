@@ -53,6 +53,9 @@ body {
 section {
     min-height: 100vh;
     padding: 42px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .btn {
@@ -461,11 +464,12 @@ div#menu {
     border-bottom-right-radius: 30px;
     position: fixed;
     z-index: 9999999;
+    display: none;
 }
 
 /* media queries */
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     html {
         font-size: 55%;
     }
@@ -476,13 +480,13 @@ div#menu {
     }
 
 
-    #menu {
+    div#menu {
         display: block;
     }
 
     header.toggle {
         left: 0%;
-        width: 70%;
+        width: 40%;
     }
 
     body {
@@ -490,27 +494,28 @@ div#menu {
         width: 100%;
     }
 
+    
     html {
         font-size: 18px;
     }
 
-    .about .row .info{
+    .about .row .info {
         padding: 0;
     }
 
-    .about .row .counter{
-        padding:2rem 0;
+    .about .row .counter {
+        padding: 2rem 0;
     }
 
-    .about .row .counter .box{
+    .about .row .counter .box {
         width: 40%;
     }
 
-    .education .box-container{
+    .education .box-container {
         padding: 0;
     }
 
-    .education .box-container .box{
+    .education .box-container .box {
         width: 100%;
     }
 
@@ -523,11 +528,22 @@ div#menu {
     header .navbar ul {
         padding: 0;
     }
-    
+
     header .navbar {
         margin: 0;
     }
 
+    .contact .row .content{
+        padding: 30px 0;
+    }
+
+}
+
+
+@media(max-width:767px){
+    header.toggle{
+        width: 60%;
+    }
 }
 
 @media (max-width:400px) {
@@ -551,4 +567,75 @@ div#menu {
     .contact .row form {
         margin: 3rem 0;
     }
+}
+
+@keyframes progress {
+    0% {
+        --percentage: 0;
+    }
+
+    100% {
+        --percentage: var(--value);
+    }
+}
+
+@property --percentage {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+}
+
+[role="progressbar"] {
+    --percentage: var(--value);
+    --primary: var(--yellow);
+    --secondary: #fff;
+    --size: 160px;
+    animation: progress 2s 0.5s forwards;
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+[role="progressbar"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+
+[role="progressbar"]::after {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--primary);
+}
+
+.progressbar-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.progressbar-1 > div {
+    margin: 10px;
+}
+
+.progressbar-text {
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    letter-spacing: 2px;
+    margin: 10px;
 }
