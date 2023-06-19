@@ -460,6 +460,7 @@ div#menu {
     width: fit-content;
     border-bottom-right-radius: 30px;
     position: fixed;
+    z-index: 9999999;
 }
 
 /* media queries */
@@ -471,6 +472,7 @@ div#menu {
 
     header {
         left: -120%;
+        transition: .5s;
     }
 
 
@@ -480,6 +482,7 @@ div#menu {
 
     header.toggle {
         left: 0%;
+        width: 70%;
     }
 
     body {
@@ -509,6 +512,20 @@ div#menu {
 
     .education .box-container .box{
         width: 100%;
+    }
+
+    .contact .row form {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    header .navbar ul {
+        padding: 0;
+    }
+    
+    header .navbar {
+        margin: 0;
     }
 
 }
