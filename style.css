@@ -626,6 +626,11 @@ div#menu {
 
     .projects .box-container {
         display: block;
+        padding: 0;
+    }
+
+    .projects .box-container .box{
+        width: 100%;
     }
 }
 
@@ -636,7 +641,8 @@ div#menu {
     }
 
     .heading {
-        margin: 0 3rem;
+        margin: 0;
+        padding: 0;
     }
 
     .about .row .counter .box {
