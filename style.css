@@ -546,6 +546,22 @@ div#menu {
     display: none;
 }
 
+.absolute {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.absolute i {
+    color: var(--yellow);
+}
+
 /* media queries */
 
 @media (max-width:992px) {
